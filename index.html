@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section>
+        <div class="logo">Crear</div>
+        <img src="bg.jpg" class="bg">
+        <div class="content">
+        <h2>Hagamos<br>Algo Creativo</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Officiis explicabo modi eligendi quam ut provident in maiores facere ullam 
+            enim est doloribus obcaecati animi beatae quia esse ducimus earum impedit totam 
+            cum, excepturi accusantium maxime. Distinctio maiores in reprehenderit quas vitae, 
+            consectetur rem soluta, saepe laborum nostrum voluptate inventore nulla, quasi 
+            corrupti hic vero voluptates? </p>
+            <a href="#">Comenzar</a>
+        </div>
+        <p class="CopyrightText">©2020.Maz</p>
+    </section>
+
+    <div class="menu" onclick="toggleMenu();"></div>
+    <div class="navegador">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Acerca de</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="#">Temas</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        <div class="social">
+            <ul>
+                <li><a href="#"><img src="facebook.png"></a></li>
+                <li><a href="#"><img src="twitter.png"></a></li>
+                <li><a href="#"><img src="instagram.png"></a></li>
+            </ul>
+            <a href="mailto:you@email.com" class="email"><img src="email.png"></a>
+        </div>
+    </div>
+    <script class="text/javascript">
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.menu');
+            var navegador = document.querySelector('.navegador');
+
+            menuToggle.classList.toggle('active');
+            navegador.classList.toggle('active');
+
+        }
+    </script>
+</body>
+</html>
